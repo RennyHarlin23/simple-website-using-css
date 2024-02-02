@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-snap-type: y proximity;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .nav-container{
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            align-content: space-around;
+            flex-direction: row;
+            margin-right: 20px;
+            padding-top: 25px;
+        }
+        section{
+            height: 100vh;
+            scroll-snap-align: start;
+        }
+        #home{
+            background-color: #FFD28F;
+            color: lightsalmon;
+        }
+        .title{
+            margin-top: 250px;
+            margin-left: 100px;
+            font-size: 3rem;
+        }
+        #about-me{
+            background-color: #597E52;
+            color: #C6A969;
+        }
+        #projects{
+            background-color: #99BC85;
+            color: #BFD8AF;
+        }
+        #contact-me{
+            background-color: #597E52;
+            color: #C6A969;
+        }
+        .nav-item > a{
+            outline: none;
+            color: lightsalmon;
+            text-decoration: none;
+            border: 2px solid lightsalmon;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .about{
+            width: 500px;
+        }
+        .about-container{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+        }
+        #projects > h1{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .projects-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            height: 60vh;
+        }
+        .project{
+            width: 200px;
+            border: solid 2px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        #contact-me > h1{
+            text-align: center;
+            padding: 20px;
+        }
+        .contact{
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 500px;
+            padding: 10px;
+            border: solid 2px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+        footer{
+            text-align: center;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section id="home">
+        <div id="navbar">
+             <div class="nav-container">
+                <div class="nav-item"><a href="#home">Home</a></div>
+                <div class="nav-item"><a href="#about-me">About me</a></div>
+                <div class="nav-item"><a href="#projects">Projects</a></div>
+                <div class="nav-item"><a href="#contact-me">Stay in touch</a></div>
+             </div>
+            </div>
+        <h1 class="title">Hello. I'm Renny.</h1>
+    </section>
+    <section id="about-me">
+        <div class="about-container">
+        <div class="about">
+        <h2>I'm an AI student at Amrita Vishwavidhyapeetham, Coimbatore. I'm currently learning UI</h2>
+        </div>
+        <div class="about">
+        </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1>My projects</h1>
+        <div class="projects-container">
+            <div class="project">
+                <h1>Project 1</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            </div>
+            <div class="project">
+                <h1>Project 2</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            </div>
+            <div class="project">
+                <h1>Project 3</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            </div>
+        </div>
+    </section>
+    <section id="contact-me">
+        <h1>Contact me</h1>
+        <div class="contact">
+            Renny Harlin D
+            <br>
+            CB.SC.U4AIE23334
+            <br>
+            AI Department
+            <br>
+            Amrita Vishwavidhyapeetham, Coimbatore
+        </div>
+        <footer>
+            &copy; Renny Harlin 2023
+        </footer>
+    </section>
+</body>
+</html>
